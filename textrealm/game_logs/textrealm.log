@@ -1,0 +1,181 @@
+[2026-11-03 16:02:32] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game-Git/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-03 16:02:32] SPAWN textrealm_server (linux) pid=3081842
+[2026-11-03 16:02:47] CRASH textrealm_server (linux) pid=3081842 killed by signal 2 (error code 130)
+[2026-11-03 16:02:47] supervisor stopping on signal
+[2026-11-03 16:07:33] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game-Git/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-03 16:07:33] SPAWN textrealm_server (linux) pid=3085292
+[2026-11-03 16:09:38] CONNECTION CRASH pid=3086704 killed by signal 11 (error code 139)
+[2026-11-03 16:09:49] CRASH textrealm_server (linux) pid=3085292 killed by signal 15 (error code 143)
+[2026-11-03 16:09:49] supervisor stopping on signal
+[2026-11-03 16:13:34] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game-Git/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-03 16:13:34] SPAWN textrealm_server (linux) pid=3089333
+[2026-11-03 16:13:40] CONNECTION CRASH pid=3089396 killed by signal 11 (error code 139)
+[2026-11-03 16:14:01] CONNECTION CRASH pid=3089758 killed by signal 11 (error code 139)
+[2026-11-03 16:16:40] CONNECTION CRASH pid=3091472 killed by signal 11 (error code 139)
+[2026-11-03 16:47:32] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:20:10] INTERRUPTED textrealm_server (linux) pid=3089333 killed by SIGINT (error code 130)
+[2026-11-03 18:20:10] supervisor stopping on signal
+[2026-11-03 18:28:33] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game-Git/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-03 18:28:33] SPAWN textrealm_server (linux) pid=3169642
+[2026-11-03 18:28:42] CRASH textrealm_server (linux) pid=3169642 killed by signal 15 (error code 143)
+[2026-11-03 18:28:42] supervisor stopping on signal
+[2026-11-03 18:31:17] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:33:44] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:34:05] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game-Git/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-03 18:34:05] SPAWN textrealm_server (linux) pid=3173629
+[2026-11-03 18:35:01] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:35:02] CRASH textrealm_server (linux) pid=3173629 killed by signal 11 (error code 139)
+[2026-11-03 18:35:02] RESPAWN OK textrealm_server (linux) new pid=3175085 (previous pid=3173629 died, respawn #1)
+[2026-11-03 18:37:13] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:37:14] CRASH textrealm_server (linux) pid=3175085 killed by signal 11 (error code 139)
+[2026-11-03 18:37:14] RESPAWN OK textrealm_server (linux) new pid=3176587 (previous pid=3175085 died, respawn #2)
+[2026-11-03 18:38:14] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:38:15] CRASH textrealm_server (linux) pid=3176587 killed by signal 11 (error code 139)
+[2026-11-03 18:38:15] RESPAWN OK textrealm_server (linux) new pid=3177264 (previous pid=3176587 died, respawn #3)
+[2026-11-03 18:40:30] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:40:31] CRASH textrealm_server (linux) pid=3177264 killed by signal 11 (error code 139)
+[2026-11-03 18:40:31] RESPAWN OK textrealm_server (linux) new pid=3178799 (previous pid=3177264 died, respawn #4)
+[2026-11-03 18:41:30] CRASH textrealm_server (linux) pid=3178799 killed by signal 9 (error code 137)
+[2026-11-03 18:41:30] RESPAWN OK textrealm_server (linux) new pid=3179463 (previous pid=3178799 died, respawn #5)
+[2026-11-03 18:41:39] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:40] CRASH textrealm_server (linux) pid=3179463 killed by signal 11 (error code 139)
+[2026-11-03 18:41:40] RESPAWN OK textrealm_server (linux) new pid=3179576 (previous pid=3179463 died, respawn #6)
+[2026-11-03 18:41:41] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:42] CRASH textrealm_server (linux) pid=3179576 killed by signal 11 (error code 139)
+[2026-11-03 18:41:42] server died quickly, waiting 1s before respawn
+[2026-11-03 18:41:43] RESPAWN OK textrealm_server (linux) new pid=3179630 (previous pid=3179576 died, respawn #7)
+[2026-11-03 18:41:43] CRASH textrealm_server (linux) pid=3179630 exited with error code 1
+[2026-11-03 18:41:43] server died quickly, waiting 2s before respawn
+[2026-11-03 18:41:44] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:45] RESPAWN OK textrealm_server (linux) new pid=3179652 (previous pid=3179630 died, respawn #8)
+[2026-11-03 18:41:45] CRASH textrealm_server (linux) pid=3179652 exited with error code 1
+[2026-11-03 18:41:45] server died quickly, waiting 3s before respawn
+[2026-11-03 18:41:46] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:48] RESPAWN OK textrealm_server (linux) new pid=3179689 (previous pid=3179652 died, respawn #9)
+[2026-11-03 18:41:48] CRASH textrealm_server (linux) pid=3179689 exited with error code 1
+[2026-11-03 18:41:48] server died quickly, waiting 4s before respawn
+[2026-11-03 18:41:49] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:51] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:52] RESPAWN OK textrealm_server (linux) new pid=3179735 (previous pid=3179689 died, respawn #10)
+[2026-11-03 18:41:52] CRASH textrealm_server (linux) pid=3179735 exited with error code 1
+[2026-11-03 18:41:52] server died quickly, waiting 5s before respawn
+[2026-11-03 18:41:54] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:57] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:41:57] RESPAWN OK textrealm_server (linux) new pid=3179934 (previous pid=3179735 died, respawn #11)
+[2026-11-03 18:41:57] CRASH textrealm_server (linux) pid=3179934 exited with error code 1
+[2026-11-03 18:41:57] server died quickly, waiting 5s before respawn
+[2026-11-03 18:42:02] RESPAWN OK textrealm_server (linux) new pid=3179982 (previous pid=3179934 died, respawn #12)
+[2026-11-03 18:42:04] CRASH textrealm_server (linux) pid=3179982 killed by signal 9 (error code 137)
+[2026-11-03 18:42:04] server died quickly, waiting 5s before respawn
+[2026-11-03 18:42:09] RESPAWN OK textrealm_server (linux) new pid=3180043 (previous pid=3179982 died, respawn #13)
+[2026-11-03 18:43:04] INTERRUPTED server received SIGINT, exiting with code 130
+[2026-11-03 18:43:04] INTERRUPTED textrealm_server (linux) pid=3180043 exited with code 130 (SIGINT)
+[2026-11-03 18:43:04] supervisor stopping on signal
+[2026-11-03 18:43:05] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game-Git/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-03 18:43:05] SPAWN textrealm_server (linux) pid=3180632
+[2026-11-03 18:43:10] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:43:11] CRASH textrealm_server (linux) pid=3180632 killed by signal 11 (error code 139)
+[2026-11-03 18:43:11] RESPAWN OK textrealm_server (linux) new pid=3180737 (previous pid=3180632 died, respawn #1)
+[2026-11-03 18:45:13] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:45:14] CRASH textrealm_server (linux) pid=3180737 killed by signal 11 (error code 139)
+[2026-11-03 18:45:14] RESPAWN OK textrealm_server (linux) new pid=3182066 (previous pid=3180737 died, respawn #2)
+[2026-11-03 18:45:15] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:45:16] CRASH textrealm_server (linux) pid=3182066 killed by signal 11 (error code 139)
+[2026-11-03 18:45:16] server died quickly, waiting 1s before respawn
+[2026-11-03 18:45:17] RESPAWN OK textrealm_server (linux) new pid=3182109 (previous pid=3182066 died, respawn #3)
+[2026-11-03 18:45:17] CRASH textrealm_server (linux) pid=3182109 exited with error code 1
+[2026-11-03 18:45:17] server died quickly, waiting 2s before respawn
+[2026-11-03 18:45:18] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:45:19] RESPAWN OK textrealm_server (linux) new pid=3182144 (previous pid=3182109 died, respawn #4)
+[2026-11-03 18:45:19] CRASH textrealm_server (linux) pid=3182144 exited with error code 1
+[2026-11-03 18:45:19] server died quickly, waiting 3s before respawn
+[2026-11-03 18:45:20] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:45:22] RESPAWN OK textrealm_server (linux) new pid=3182168 (previous pid=3182144 died, respawn #5)
+[2026-11-03 18:46:28] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:29] CRASH textrealm_server (linux) pid=3182168 killed by signal 11 (error code 139)
+[2026-11-03 18:46:29] RESPAWN OK textrealm_server (linux) new pid=3182969 (previous pid=3182168 died, respawn #6)
+[2026-11-03 18:46:30] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:31] CRASH textrealm_server (linux) pid=3182969 killed by signal 11 (error code 139)
+[2026-11-03 18:46:31] server died quickly, waiting 1s before respawn
+[2026-11-03 18:46:31] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:32] RESPAWN OK textrealm_server (linux) new pid=3183025 (previous pid=3182969 died, respawn #7)
+[2026-11-03 18:46:32] CRASH textrealm_server (linux) pid=3183025 exited with error code 1
+[2026-11-03 18:46:32] server died quickly, waiting 2s before respawn
+[2026-11-03 18:46:33] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:34] RESPAWN OK textrealm_server (linux) new pid=3183047 (previous pid=3183025 died, respawn #8)
+[2026-11-03 18:46:34] CRASH textrealm_server (linux) pid=3183047 exited with error code 1
+[2026-11-03 18:46:34] server died quickly, waiting 3s before respawn
+[2026-11-03 18:46:34] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:36] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:37] RESPAWN OK textrealm_server (linux) new pid=3183092 (previous pid=3183047 died, respawn #9)
+[2026-11-03 18:46:37] CRASH textrealm_server (linux) pid=3183092 exited with error code 1
+[2026-11-03 18:46:37] server died quickly, waiting 4s before respawn
+[2026-11-03 18:46:37] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:39] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:46:41] RESPAWN OK textrealm_server (linux) new pid=3183153 (previous pid=3183092 died, respawn #10)
+[2026-11-03 18:46:46] CRASH textrealm_server (linux) pid=3183153 killed by signal 9 (error code 137)
+[2026-11-03 18:46:46] RESPAWN OK textrealm_server (linux) new pid=3183195 (previous pid=3183153 died, respawn #11)
+[2026-11-03 18:47:35] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:47:36] CRASH textrealm_server (linux) pid=3183195 killed by signal 11 (error code 139)
+[2026-11-03 18:47:36] RESPAWN OK textrealm_server (linux) new pid=3183806 (previous pid=3183195 died, respawn #12)
+[2026-11-03 18:50:58] CRASH textrealm_server (linux) pid=3183806 killed by signal 9 (error code 137)
+[2026-11-03 18:50:58] RESPAWN OK textrealm_server (linux) new pid=3185810 (previous pid=3183806 died, respawn #13)
+[2026-11-03 18:51:12] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:51:13] CRASH textrealm_server (linux) pid=3185810 killed by signal 11 (error code 139)
+[2026-11-03 18:51:13] RESPAWN OK textrealm_server (linux) new pid=3186108 (previous pid=3185810 died, respawn #14)
+[2026-11-03 18:51:34] CRASH textrealm_server (linux) pid=3186108 killed by signal 9 (error code 137)
+[2026-11-03 18:51:34] RESPAWN OK textrealm_server (linux) new pid=3186399 (previous pid=3186108 died, respawn #15)
+[2026-11-03 18:51:41] CRASH textrealm_server (linux) pid=3186399 killed by signal 9 (error code 137)
+[2026-11-03 18:51:41] RESPAWN OK textrealm_server (linux) new pid=3186482 (previous pid=3186399 died, respawn #16)
+[2026-11-03 18:51:59] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:00] CRASH textrealm_server (linux) pid=3186482 killed by signal 11 (error code 139)
+[2026-11-03 18:52:00] RESPAWN OK textrealm_server (linux) new pid=3186634 (previous pid=3186482 died, respawn #17)
+[2026-11-03 18:52:01] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:02] CRASH textrealm_server (linux) pid=3186634 killed by signal 11 (error code 139)
+[2026-11-03 18:52:02] server died quickly, waiting 1s before respawn
+[2026-11-03 18:52:03] RESPAWN OK textrealm_server (linux) new pid=3186807 (previous pid=3186634 died, respawn #18)
+[2026-11-03 18:52:03] CRASH textrealm_server (linux) pid=3186807 exited with error code 1
+[2026-11-03 18:52:03] server died quickly, waiting 2s before respawn
+[2026-11-03 18:52:03] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:05] RESPAWN OK textrealm_server (linux) new pid=3186848 (previous pid=3186807 died, respawn #19)
+[2026-11-03 18:52:05] CRASH textrealm_server (linux) pid=3186848 exited with error code 1
+[2026-11-03 18:52:05] server died quickly, waiting 3s before respawn
+[2026-11-03 18:52:05] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:07] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:08] RESPAWN OK textrealm_server (linux) new pid=3186880 (previous pid=3186848 died, respawn #20)
+[2026-11-03 18:52:08] CRASH textrealm_server (linux) pid=3186880 exited with error code 1
+[2026-11-03 18:52:08] server died quickly, waiting 4s before respawn
+[2026-11-03 18:52:09] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:11] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:12] RESPAWN OK textrealm_server (linux) new pid=3186935 (previous pid=3186880 died, respawn #21)
+[2026-11-03 18:52:12] CRASH textrealm_server (linux) pid=3186935 exited with error code 1
+[2026-11-03 18:52:12] server died quickly, waiting 5s before respawn
+[2026-11-03 18:52:13] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:17] RESPAWN OK textrealm_server (linux) new pid=3186985 (previous pid=3186935 died, respawn #22)
+[2026-11-03 18:52:20] CRASH textrealm_server (linux) pid=3186985 killed by signal 9 (error code 137)
+[2026-11-03 18:52:20] RESPAWN OK textrealm_server (linux) new pid=3187024 (previous pid=3186985 died, respawn #23)
+[2026-11-03 18:52:31] CRASH textrealm_server (linux) pid=3187024 killed by signal 9 (error code 137)
+[2026-11-03 18:52:31] RESPAWN OK textrealm_server (linux) new pid=3187113 (previous pid=3187024 died, respawn #24)
+[2026-11-03 18:52:35] CRASH textrealm_server (linux) pid=3187113 killed by signal 9 (error code 137)
+[2026-11-03 18:52:35] RESPAWN OK textrealm_server (linux) new pid=3187309 (previous pid=3187113 died, respawn #25)
+[2026-11-03 18:52:44] CRASH textrealm_server (linux) pid=3187309 killed by signal 9 (error code 137)
+[2026-11-03 18:52:44] RESPAWN OK textrealm_server (linux) new pid=3187380 (previous pid=3187309 died, respawn #26)
+[2026-11-03 18:52:57] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:52:58] CRASH textrealm_server (linux) pid=3187380 killed by signal 11 (error code 139)
+[2026-11-03 18:52:58] RESPAWN OK textrealm_server (linux) new pid=3187527 (previous pid=3187380 died, respawn #27)
+[2026-11-03 18:53:03] CRASH textrealm_server (linux) pid=3187527 killed by signal 9 (error code 137)
+[2026-11-03 18:53:03] RESPAWN OK textrealm_server (linux) new pid=3187694 (previous pid=3187527 died, respawn #28)
+[2026-11-03 18:54:36] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:54:37] CRASH textrealm_server (linux) pid=3187694 killed by signal 11 (error code 139)
+[2026-11-03 18:54:37] RESPAWN OK textrealm_server (linux) new pid=3188690 (previous pid=3187694 died, respawn #29)
+[2026-11-03 18:55:23] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:55:24] CRASH textrealm_server (linux) pid=3188690 killed by signal 11 (error code 139)
+[2026-11-03 18:55:24] RESPAWN OK textrealm_server (linux) new pid=3189166 (previous pid=3188690 died, respawn #30)
+[2026-11-03 18:57:19] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:57:20] CRASH textrealm_server (linux) pid=3189166 killed by signal 11 (error code 139)
+[2026-11-03 18:57:20] RESPAWN OK textrealm_server (linux) new pid=3190385 (previous pid=3189166 died, respawn #31)
+[2026-11-03 18:57:46] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-03 18:57:47] CRASH textrealm_server (linux) pid=3190385 killed by signal 11 (error code 139)
+[2026-11-03 18:57:47] RESPAWN OK textrealm_server (linux) new pid=3190727 (previous pid=3190385 died, respawn #32)
+[2026-11-03 19:14:02] CRASH textrealm_server (linux) pid=3190727 killed by signal 15 (error code 143)
+[2026-11-03 19:14:02] supervisor stopping on signal
