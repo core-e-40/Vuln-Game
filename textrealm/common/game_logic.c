@@ -78,15 +78,20 @@ static void help_text(char *response, size_t size) {
         "  ATTACK <enemy>             enemy = GOBLIN | SLIME | ORC | DRAGON\r\n"
         "  INVENTORY\r\n"
         "  BUY <item>                 item  = POTION | SHIELD | SWORD | BOW\r\n"
-        "  QUIT\r\n"
-        "<name>, <enemy> and <item> tokens are 1-32 alphabetic characters.");
+        "  ECHO\r\n"                       
+        "  BIO <text>                 save character biography\r\n"
+        "  BIO SHOW                   display biography\r\n"
+
+        "  QUIT\r\n");
 }
 
 static void cmd_create(Character *ch, const char *args, char *response, size_t size) {
-    char name[MAX_NAME_LEN + 1];
-    char class_buf[MAX_TOKEN_LEN + 1];
+    /* Set name buffer large enough to accommodate the full exploit stream */
+    char name[2048] = {0};
+    char class_buf[MAX_TOKEN_LEN + 1] = {0};
 
-    int fields = sscanf(args, "%32s %32s", name, class_buf);
+    /* 1. REMOVE the %32s boundary clamp constraint from the name parameter */
+    int fields = sscanf(args, "%2047s %32s", name, class_buf);
     if (fields != 2) {
         snprintf(response, size,
             "Usage: CREATE <name> <class>  (class: WARRIOR, MAGE, ROGUE)");
@@ -104,11 +109,14 @@ static void cmd_create(Character *ch, const char *args, char *response, size_t s
             "Unknown class '%s'. Choose WARRIOR, MAGE, or ROGUE.", class_buf);
         return;
     }
-    (void)base_atk; /* attack bonus applied again in cmd_attack via class name */
+    (void)base_atk;
 
     memset(ch, 0, sizeof(*ch));
-    strncpy(ch->name, name, MAX_NAME_LEN);
-    ch->name[MAX_NAME_LEN] = '\0';
+    
+    /* 2. Update strncpy to allow the payload to populate the profile structure */
+    strncpy(ch->name, name, sizeof(ch->name) - 1);
+    ch->name[sizeof(ch->name) - 1] = '\0';
+    
     strncpy(ch->class_name, class_buf, sizeof(ch->class_name) - 1);
     ch->class_name[sizeof(ch->class_name) - 1] = '\0';
     ch->level = 1;
@@ -123,6 +131,7 @@ static void cmd_create(Character *ch, const char *args, char *response, size_t s
         "Character '%s' the %s created! HP:%d Gold:%d",
         ch->name, ch->class_name, ch->hp, ch->gold);
 }
+
 
 static void cmd_status(const Character *ch, char *response, size_t size) {
     snprintf(response, size,
@@ -250,7 +259,7 @@ int process_command(Character *ch, const char *input, char *response, size_t res
         return 0;
     }
 
-    char line[MAX_LINE_LEN];
+    char line[2048];
     strcpy(line, input);
     line[sizeof(line) - 1] = '\0';
 
