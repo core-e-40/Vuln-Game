@@ -193,3 +193,5 @@
 [2026-11-05 11:25:39] supervisor stopping on signal
 [2026-11-05 11:25:46] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
 [2026-11-05 11:25:46] SPAWN textrealm_server (linux) pid=401898
+[2026-11-05 11:27:56] CRASH textrealm_server (linux) pid=401898 killed by signal 15 (error code 143)
+[2026-11-05 11:27:56] supervisor stopping on signal
