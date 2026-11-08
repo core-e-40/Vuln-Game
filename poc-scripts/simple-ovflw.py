@@ -8,7 +8,7 @@ import socket
 import random
 import string
 
-HOST = "127.0.0.1"
+HOST = "127.0.0.1" #Change to ip
 PORT = 9999
 RECV_CHUNK = 4096
 
