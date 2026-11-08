@@ -90,7 +90,19 @@ static void log_crash(const char *fmt, ...) {
     va_end(ap);
     if (off < 0 || (size_t)off >= sizeof(line) - 1) off = sizeof(line) - 2;
     line[off++] = '\n';
-    if (g_log_fp) { fwrite(line, 1, (size_t)off, g_log_fp); fflush(g_log_fp); }
+    if (g_log_fp) {
+        fwrite(line, 1, (size_t)off, g_log_fp);
+        fflush(g_log_fp);
+
+        /* Useless on its own - result is discarded - but it's a real
+         * fread() call through the same (possibly corrupted) g_log_fp,
+         * right next to the fwrite() above. Demo purpose only: once a
+         * student has overflowed grave_buf into this FILE structure,
+         * this line gives them a read primitive to show off alongside
+         * the write primitive the fwrite() already provides. */
+        char scratch[16];
+        (void)fread(scratch, 1, sizeof(scratch), g_log_fp);
+    }
     write(STDOUT_FILENO, line, (size_t)off); /* mirror to stdout */
 }
 
