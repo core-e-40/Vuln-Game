@@ -195,3 +195,40 @@
 [2026-11-05 11:25:46] SPAWN textrealm_server (linux) pid=401898
 [2026-11-05 11:27:56] CRASH textrealm_server (linux) pid=401898 killed by signal 15 (error code 143)
 [2026-11-05 11:27:56] supervisor stopping on signal
+[2026-11-09 16:22:49] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 16:22:49] SPAWN textrealm_server (linux) pid=3972309
+[2026-11-09 16:36:50] CRASH textrealm_server (linux) pid=3972309 killed by signal 15 (error code 143)
+[2026-11-09 16:36:50] supervisor stopping on signal
+[2026-11-09 16:36:56] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 16:36:56] SPAWN textrealm_server (linux) pid=3984957
+[2026-11-09 16:37:35] CRASH textrealm_server (linux) pid=3984957 killed by signal 11 (error code 139)
+[2026-11-09 16:37:35] RESPAWN OK textrealm_server (linux) new pid=3985930 (previous pid=3984957 died, respawn #1)
+[2026-11-09 16:52:50] CRASH textrealm_server (linux) pid=3985930 killed by signal 15 (error code 143)
+[2026-11-09 16:52:50] supervisor stopping on signal
+[2026-11-09 16:54:40] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 16:54:40] SPAWN textrealm_server (linux) pid=4000912
+[2026-11-09 17:03:44] INTERRUPTED textrealm_server (linux) pid=4000912 killed by SIGINT (error code 130)
+[2026-11-09 17:03:44] supervisor stopping on signal
+[2026-11-09 17:06:14] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 17:06:14] SPAWN textrealm_server (linux) pid=4011840
+[2026-11-09 17:07:27] INTERRUPTED textrealm_server (linux) pid=4011840 killed by SIGINT (error code 130)
+[2026-11-09 17:07:27] supervisor stopping on signal
+[2026-11-09 17:12:13] INTERRUPTED server received SIGINT, exiting with code 130
+[2026-11-09 17:26:46] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 17:26:46] SPAWN textrealm_server (linux) pid=4030175
+[2026-11-09 17:35:15] INTERRUPTED textrealm_server (linux) pid=4030175 killed by SIGINT (error code 130)
+[2026-11-09 17:35:15] supervisor stopping on signal
+[2026-11-09 17:35:21] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 17:35:21] SPAWN textrealm_server (linux) pid=4038119
+[2026-11-09 17:39:30] INTERRUPTED textrealm_server (linux) pid=4038119 exited with code 130 (SIGINT)
+[2026-11-09 17:39:30] RESPAWN OK textrealm_server (linux) new pid=4041989 (previous pid=4038119 died, respawn #1)
+[2026-11-09 17:45:43] INTERRUPTED server received SIGINT, exiting with code 130
+[2026-11-09 17:45:43] CRASH textrealm_server (linux) pid=4041989 killed by signal 15 (error code 143)
+[2026-11-09 17:45:43] supervisor stopping on signal
+[2026-11-09 18:03:24] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 18:03:24] SPAWN textrealm_server (linux) pid=4062816
+[2026-11-09 18:03:56] INTERRUPTED textrealm_server (linux) pid=4062816 exited with code 130 (SIGINT)
+[2026-11-09 18:03:56] RESPAWN OK textrealm_server (linux) new pid=4063641 (previous pid=4062816 died, respawn #1)
+[2026-11-09 18:08:28] INTERRUPTED server received SIGINT, exiting with code 130
+[2026-11-09 18:08:28] CRASH textrealm_server (linux) pid=4063641 killed by signal 15 (error code 143)
+[2026-11-09 18:08:28] supervisor stopping on signal
