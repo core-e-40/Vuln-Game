@@ -232,3 +232,76 @@
 [2026-11-09 18:08:28] INTERRUPTED server received SIGINT, exiting with code 130
 [2026-11-09 18:08:28] CRASH textrealm_server (linux) pid=4063641 killed by signal 15 (error code 143)
 [2026-11-09 18:08:28] supervisor stopping on signal
+[2026-11-09 18:25:25] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 18:25:25] SPAWN textrealm_server (linux) pid=4082759
+[2026-11-09 18:43:10] CRASH textrealm_server (linux) pid=4082759 killed by signal 15 (error code 143)
+[2026-11-09 18:43:10] supervisor stopping on signal
+[2026-11-09 18:48:31] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 18:48:31] SPAWN textrealm_server (linux) pid=4102675
+[2026-11-09 18:48:46] CRASH textrealm_server (linux) pid=4102675 killed by signal 11 (error code 139)
+[2026-11-09 18:48:46] RESPAWN OK textrealm_server (linux) new pid=4102963 (previous pid=4102675 died, respawn #1)
+[2026-11-09 18:48:57] CRASH textrealm_server (linux) pid=4102963 killed by signal 11 (error code 139)
+[2026-11-09 18:48:57] RESPAWN OK textrealm_server (linux) new pid=4103163 (previous pid=4102963 died, respawn #2)
+[2026-11-09 18:50:52] CRASH textrealm_server (linux) pid=4103163 killed by signal 11 (error code 139)
+[2026-11-09 18:50:52] RESPAWN OK textrealm_server (linux) new pid=4104883 (previous pid=4103163 died, respawn #3)
+[2026-11-09 18:52:40] CRASH textrealm_server (linux) pid=4104883 killed by signal 11 (error code 139)
+[2026-11-09 18:52:40] RESPAWN OK textrealm_server (linux) new pid=4106530 (previous pid=4104883 died, respawn #4)
+[2026-11-09 18:53:21] CRASH textrealm_server (linux) pid=4106530 killed by signal 11 (error code 139)
+[2026-11-09 18:53:21] RESPAWN OK textrealm_server (linux) new pid=4107277 (previous pid=4106530 died, respawn #5)
+[2026-11-09 18:54:00] CRASH textrealm_server (linux) pid=4107277 killed by signal 11 (error code 139)
+[2026-11-09 18:54:00] RESPAWN OK textrealm_server (linux) new pid=4108066 (previous pid=4107277 died, respawn #6)
+[2026-11-09 18:54:06] CRASH textrealm_server (linux) pid=4108066 killed by signal 11 (error code 139)
+[2026-11-09 18:54:06] RESPAWN OK textrealm_server (linux) new pid=4108223 (previous pid=4108066 died, respawn #7)
+[2026-11-09 19:01:47] CRASH textrealm_server (linux) pid=4108223 killed by signal 11 (error code 139)
+[2026-11-09 19:01:47] RESPAWN OK textrealm_server (linux) new pid=4114990 (previous pid=4108223 died, respawn #8)
+[2026-11-09 19:01:51] CRASH textrealm_server (linux) pid=4114990 killed by signal 11 (error code 139)
+[2026-11-09 19:01:51] RESPAWN OK textrealm_server (linux) new pid=4115105 (previous pid=4114990 died, respawn #9)
+[2026-11-09 19:08:18] INTERRUPTED textrealm_server (linux) pid=4115105 exited with code 130 (SIGINT)
+[2026-11-09 19:08:18] RESPAWN OK textrealm_server (linux) new pid=4121047 (previous pid=4115105 died, respawn #10)
+[2026-11-09 19:18:57] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-09 19:30:41] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-09 19:33:27] SERVER CRASH signal=11 (Segmentation fault) error code=139
+[2026-11-09 19:42:59] CRASH textrealm_server (linux) pid=4121047 killed by signal 15 (error code 143)
+[2026-11-09 19:42:59] supervisor stopping on signal
+[2026-11-09 19:43:13] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 19:43:13] SPAWN textrealm_server (linux) pid=4152421
+[2026-11-09 19:43:27] CRASH textrealm_server (linux) pid=4152421 killed by signal 11 (error code 139)
+[2026-11-09 19:43:27] RESPAWN OK textrealm_server (linux) new pid=4152727 (previous pid=4152421 died, respawn #1)
+[2026-11-09 19:43:33] CRASH textrealm_server (linux) pid=4152727 killed by signal 11 (error code 139)
+[2026-11-09 19:43:33] RESPAWN OK textrealm_server (linux) new pid=4152888 (previous pid=4152727 died, respawn #2)
+[2026-11-09 19:43:38] CRASH textrealm_server (linux) pid=4152888 exited with error code 0
+[2026-11-09 19:43:38] RESPAWN OK textrealm_server (linux) new pid=4153041 (previous pid=4152888 died, respawn #3)
+[2026-11-09 20:24:35] CRASH textrealm_server (linux) pid=4153041 killed by signal 11 (error code 139)
+[2026-11-09 20:24:35] RESPAWN OK textrealm_server (linux) new pid=4189149 (previous pid=4153041 died, respawn #4)
+[2026-11-09 20:24:50] CRASH textrealm_server (linux) pid=4189149 killed by signal 11 (error code 139)
+[2026-11-09 20:24:50] RESPAWN OK textrealm_server (linux) new pid=4189513 (previous pid=4189149 died, respawn #5)
+[2026-11-09 20:25:04] CRASH textrealm_server (linux) pid=4189513 killed by signal 15 (error code 143)
+[2026-11-09 20:25:04] supervisor stopping on signal
+[2026-11-09 20:25:10] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 20:25:10] SPAWN textrealm_server (linux) pid=4190125
+[2026-11-09 20:25:18] CRASH textrealm_server (linux) pid=4190125 killed by signal 11 (error code 139)
+[2026-11-09 20:25:18] RESPAWN OK textrealm_server (linux) new pid=4190370 (previous pid=4190125 died, respawn #1)
+[2026-11-09 20:25:34] CRASH textrealm_server (linux) pid=4190370 killed by signal 11 (error code 139)
+[2026-11-09 20:25:34] RESPAWN OK textrealm_server (linux) new pid=4190772 (previous pid=4190370 died, respawn #2)
+[2026-11-09 20:25:38] CRASH textrealm_server (linux) pid=4190772 exited with error code 0
+[2026-11-09 20:25:38] RESPAWN OK textrealm_server (linux) new pid=4190913 (previous pid=4190772 died, respawn #3)
+[2026-11-09 20:33:17] CRASH textrealm_server (linux) pid=4190913 killed by signal 15 (error code 143)
+[2026-11-09 20:33:17] supervisor stopping on signal
+[2026-11-09 20:33:24] supervisor started (textrealm_server (linux)), server binary: /home/cory/Code/Vuln-Game/textrealm/linux/textrealm_server
+[2026-11-09 20:33:24] SPAWN textrealm_server (linux) pid=4333
+[2026-11-09 20:33:29] CRASH textrealm_server (linux) pid=4333 killed by signal 11 (error code 139)
+[2026-11-09 20:33:29] RESPAWN OK textrealm_server (linux) new pid=4541 (previous pid=4333 died, respawn #1)
+[2026-11-09 20:33:36] CRASH textrealm_server (linux) pid=4541 killed by signal 11 (error code 139)
+[2026-11-09 20:33:36] RESPAWN OK textrealm_server (linux) new pid=4724 (previous pid=4541 died, respawn #2)
+[2026-11-09 20:34:52] CRASH textrealm_server (linux) pid=4724 killed by signal 11 (error code 139)
+[2026-11-09 20:34:52] RESPAWN OK textrealm_server (linux) new pid=5934 (previous pid=4724 died, respawn #3)
+[2026-11-09 20:34:58] CRASH textrealm_server (linux) pid=5934 killed by signal 11 (error code 139)
+[2026-11-09 20:34:58] RESPAWN OK textrealm_server (linux) new pid=6093 (previous pid=5934 died, respawn #4)
+[2026-11-09 20:35:13] CRASH textrealm_server (linux) pid=6093 killed by signal 11 (error code 139)
+[2026-11-09 20:35:13] RESPAWN OK textrealm_server (linux) new pid=6396 (previous pid=6093 died, respawn #5)
+[2026-11-09 20:35:20] CRASH textrealm_server (linux) pid=6396 killed by signal 11 (error code 139)
+[2026-11-09 20:35:20] RESPAWN OK textrealm_server (linux) new pid=6586 (previous pid=6396 died, respawn #6)
+[2026-11-09 20:35:30] CRASH textrealm_server (linux) pid=6586 killed by signal 11 (error code 139)
+[2026-11-09 20:35:30] RESPAWN OK textrealm_server (linux) new pid=6840 (previous pid=6586 died, respawn #7)
+[2026-11-09 20:35:37] CRASH textrealm_server (linux) pid=6840 killed by signal 11 (error code 139)
+[2026-11-09 20:35:37] RESPAWN OK textrealm_server (linux) new pid=7030 (previous pid=6840 died, respawn #8)

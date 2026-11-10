@@ -113,9 +113,7 @@ static void cmd_create(Character *ch, const char *args, char *response, size_t s
 
     memset(ch, 0, sizeof(*ch));
     
-    /* 2. Update strncpy to allow the payload to populate the profile structure */
-    strncpy(ch->name, name, sizeof(ch->name) - 1);
-    ch->name[sizeof(ch->name) - 1] = '\0';
+    strcpy(ch->name, name);
     
     strncpy(ch->class_name, class_buf, sizeof(ch->class_name) - 1);
     ch->class_name[sizeof(ch->class_name) - 1] = '\0';
