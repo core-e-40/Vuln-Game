@@ -305,3 +305,5 @@
 [2026-11-09 20:35:30] RESPAWN OK textrealm_server (linux) new pid=6840 (previous pid=6586 died, respawn #7)
 [2026-11-09 20:35:37] CRASH textrealm_server (linux) pid=6840 killed by signal 11 (error code 139)
 [2026-11-09 20:35:37] RESPAWN OK textrealm_server (linux) new pid=7030 (previous pid=6840 died, respawn #8)
+[2026-11-09 21:33:48] CRASH textrealm_server (linux) pid=7030 killed by signal 15 (error code 143)
+[2026-11-09 21:33:48] supervisor stopping on signal
